@@ -70,15 +70,8 @@
       width: 130px;
       height: 130px;
       border-radius: 4px;
-      border: 1px dashed #bbb;
+      border: 1px solid var(--border);
       background-color: #fafafa;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-sub);
-      font-size: 0.8rem;
-      letter-spacing: 0.02em;
       flex-shrink: 0;
       overflow: hidden;
     }
@@ -87,6 +80,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
     }
 
     .name-heading {
@@ -167,10 +161,13 @@
       flex-wrap: wrap;
     }
 
-    .nav-links a {
+    .nav-links a, .nav-links span {
       font-size: 1.05rem;
       font-weight: 500;
       color: var(--text);
+    }
+
+    .nav-links a {
       text-decoration: underline;
       text-underline-offset: 4px;
       text-decoration-color: #d1d1d1;
@@ -218,16 +215,15 @@
 
   <div class="container">
 
-    <!-- Profile: Square photo placeholder + Name only -->
+    <!-- Profile: Square photo + Name only -->
     <header class="profile-header">
       <div class="photo-slot">
-        <!-- Replace 'src' with your photo path (e.g. photo.jpg) -->
-        <span>Photo</span>
+        <img src="profile.jpg" alt="KyungHoon Cho">
       </div>
       <h1 class="name-heading">KyungHoon Cho</h1>
     </header>
 
-    <!-- Affiliation & Interests (Strictly what you requested) -->
+    <!-- Affiliation & Interests -->
     <main class="details">
       <div class="item-group">
         <span class="label">Affiliation</span>
@@ -243,13 +239,13 @@
       </div>
     </main>
 
-    <!-- Unified Links Section (All neatly gathered in one place) -->
+    <!-- Unified Links Section -->
     <footer class="links-section">
       <span class="label">Connect</span>
       <div class="nav-links">
         <a href="https://9uan1um.notion.site/QC-316a11629f2b80de9ca1f3233eff7583" target="_blank" rel="noopener noreferrer">Blog</a>
         <a href="https://www.linkedin.com/in/kyunghoon-cho-5b8a64291?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:9uan1um@gmail.com">Mail</a>
+        <a href="mailto:9uan1um@gmail.com">9uan1um@gmail.com</a>
       </div>
     </footer>
 
